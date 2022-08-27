@@ -1,0 +1,36 @@
+<!-- MAIN -->
+<main id="panel">
+    <div class="main-fondo">
+        <!--Caja de Contacto-->
+        <div class="whitebox">
+            <div class="grid">
+                <div class="content-input">
+                    <h2>Generar nuevo Horario</h2>
+                    <form action="panel/new-note" method="POST">
+                        <label class="input" for="title">Introduzca los días</label>
+                        <input
+                            class="main__input"
+                            type="text"
+                            name="title"
+                            placeholder="Días"
+                        >
+
+                        <label for="description" class="input">Introduzca las horas</label>
+                        <textarea class="main__textarea" name="description" placeholder="Horas"></textarea>
+                        <input type="submit" value="Ingresar" class="main__input main__input--send">
+                    </form>
+                </div>
+                <div class="content-note">
+                    {{#each notes}}
+                    <div class="box">
+                        <h3>{{ title }}</h3>
+                        <p>{{ description }}</p>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <!--Caja de Contacto-->
+    </div>
+</main>
+<!-- MAIN -->

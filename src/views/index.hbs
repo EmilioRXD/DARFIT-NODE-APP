@@ -1,0 +1,155 @@
+<!-- HEADER -->
+<header id="index">
+    <!-- NAV -->
+    {{> navigation }}
+    <!-- NAV -->
+
+    <!-- MAIN -->
+    <main>
+        <div class="main-fondo">
+        </div>
+
+        <div class="container">
+            <div class="main-texto">
+                <h1>Ayudamos a Cumplir tus Metas</h1>
+                <p>con #<span class="typed"></span></p>
+                <a href="https://wa.me/56992483405?text=Hola!+estoy+interesado+en+las+clases+grupales+y+las+clases+personalizadas+%F0%9F%92%AA">Contáctame</a>      
+            </div>
+        </div>
+    </main>
+    <!-- MAIN -->
+
+</header>
+<!-- HEADER -->
+
+<!--Cards-->
+<section class="cards">
+
+    <!--Cards 1-->
+    <div class="card">
+        <div class="title">
+            <img src="img/heart-pulse-solid.svg" class="lol">
+            <h2>Planes<br>Nutricionales</h2>
+        </div>
+        <div class="descripcion">
+            <p>
+                Si tu propósito es subir masa muscular es importante que seas consciente de la importancia del binomio ejercicio <br> físico + dieta.
+            </p>  
+        </div>
+        
+        <a href="pag/plans.html" class="boton negrita">Más Info</a>
+    </div>
+
+    <!--Cards 2-->
+    <div class="card">
+        <div class="title">
+            <img src="img/chronometer.svg" class="lol">
+            <h2>Horarios de<br>Clases</h2>
+        </div>
+        <div class="descripcion">
+            <p>
+                Te gusta entrenar en la mañana <br> o en la tarde?
+            </p>  
+        </div>
+
+        <a id="open" class="boton negrita">Más Info</a>
+    </div>
+
+    <!--Cards 3-->
+    <div class="card">
+        <div class="title">
+            <img src="img/person-running-solid.svg" class="lol">
+            <h2>Clases Perzonalizadas</h2>
+        </div>
+        <div class="descripcion">
+            <p>
+                Si no cuentas con suficiente tiempo, pregunta por nuestras clases personlizadas.
+            </p>
+            
+        </div>
+        <a href="https://wa.me/56992483405?text=Quiero+saber+m%C3%A1s+sobre+las+clases+personalizadas+%F0%9F%92%AA" class="boton negrita">Más Info</a>
+    </div>
+</section>
+
+<!--Modal-->
+<div id="modal_container" class="modal-container">
+    <div class="close boton-fondo"></div>
+    <div class="modal">
+        <h3>Nuestros horarios de clases</h3>
+            {{#each notes}}
+                <ul>
+                    <h4 class="horario">{{ title }}</h4>
+                    <li>{{ description }}</li>
+                </ul>
+            {{/each}}
+            <h4 class="whatsapp">¡Pregunta por nuestras Clases Personalizadas!</h4>
+        <button id="close" class="boton negrita">Cerrar</button>
+    </div>
+    <div class="img-modal">
+    </div>
+</div>
+<!--Modal-->
+<!--Cards-->
+
+<!--QUIENES SOMOS-->
+<section class="contenido">
+    <div class="contenedor">
+        <div class="parrafo">
+            <h2 class="text-title">¿Cómo trabajamos en DARFIT?</h2>
+            <p>
+                En Darfit trabajamos en base al Entrenamiento Funcional, muchos se preguntan: “¿qué es el entrenamiento funcional?”. Una definición de entrenamiento funcional es que este es un método de entrenamiento enfocado a ayudarte en llevar a cabo tus tareas cotidianas. ¿Qué es el entrenamiento funcional?<br>
+                En términos generales, es una rutina de ejercicios que considera al cuerpo en su totalidad, sin enfocarse solamente en alguna parte en concreto.<br>
+                Por nuestro entrenamiento está cada vez más usado, interesante y especial, es que se realiza de manera coordinada para mejorar el funcionamiento integral del cuerpo.<br>
+            </p>
+        </div>
+        <img src="img/darfit.png" class="darfit-logo">
+    </div>
+</section>
+<!--QUIENES SOMOS-->
+
+<!--Slide-->
+<div class="slideshow-container">
+    <div class="mySlides1 fade">
+        <img src="img/slide/01.jpg">
+    </div>
+    <div class="mySlides1 fade">
+        <img src="img/slide/02.jpg">
+    </div>
+    <div class="mySlides1 fade">
+        <img src="img/slide/03.jpg">
+    </div>
+    <div class="mySlides1 fade">
+        <img src="img/slide/04.jpg">
+    </div>
+    <div class="mySlides1 fade">
+        <img src="img/slide/05.jpg">
+    </div>
+    <div class="mySlides1 fade">
+        <img src="img/slide/06.jpg">
+    </div>
+    <div class="mySlides1 fade">
+        <img src="img/slide/07.jpg">
+    </div>
+    <div class="mySlides1 fade">
+        <img src="img/slide/08.jpg">
+    </div>
+    <div class="mySlides1 fade">
+        <img src="img/slide/09.jpg">
+    </div>
+    <div class="mySlides1 fade">
+        <img src="img/slide/10.jpg">
+    </div>
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<!--Slide-->
+
+<!-- FOOTER -->
+{{> footer }} 
+<!-- FOOTER -->
+
+<script src="/js/typed.js"></script>
+<script src="/js/menu.js"></script>
+<script src="/js/texto.js"></script>
+<script src="/js/scroll.js"></script>
+<script src="/js/app.js"></script>

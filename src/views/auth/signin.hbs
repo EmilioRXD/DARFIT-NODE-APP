@@ -1,0 +1,35 @@
+<section class="main" id="signin">
+
+    <figure class="main__figure">
+        <img src="/img/darfit.png" class="main__img">
+    </figure>
+
+    <div class="main__contact">
+
+        <h2 class="main__title">Hola de Nuevo!</h2>
+        <p class="main__paragraph">Bienvenido al administrador de horarios!</p>
+
+        <form class="main__form" action="/auth/signin" method="POST">
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Correo"
+                class="main__input"
+                autofocus
+            >
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Contraseña"
+                class="main__input"
+            >
+
+            <input type="submit" value="Ingresar" class="main__input main__input--send">
+
+        </form>
+
+    </div>
+
+</section>
