@@ -23,8 +23,16 @@
                 <div class="content-note">
                     {{#each notes}}
                     <div class="box">
-                        <h3>{{ title }}</h3>
-                        <p>{{ description }}</p>
+                        <div class="section-text">
+                            <h3>{{ title }}</h3>
+                            <p>{{ description }}</p>
+                        </div>
+                        <div class="section-btn">
+                            <form action="/panel/delete/{{_id}}?_method=DELETE" method="POST">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="btn">X</button>
+                            </form>
+                        </div>
                     </div>
                     {{/each}}
                 </div>
