@@ -3,7 +3,7 @@ let contact     = document.getElementById("contact");
 let biography   = document.getElementById("biography");
 let plans       = document.getElementById("plans");
 let signin      = document.getElementById("signin");
-
+let panel       = document.getElementById("panel");
 
 if(index) {
   $('link[rel=stylesheet][href~="/css/biography.css"]').remove();
@@ -34,6 +34,7 @@ if(contact){
   $('link[rel=stylesheet][href~="/css/biography.css"]').remove();
   $('link[rel=stylesheet][href~="/css/plans.css"]').remove();
   $('link[rel=stylesheet][href~="/css/signin.css"]').remove();
+  $('link[rel=stylesheet][href~="/css/panel.css"]').remove();
 
 }
 if(signin){

@@ -75,17 +75,25 @@
 <div id="modal_container" class="modal-container">
     <div class="close boton-fondo"></div>
     <div class="modal">
-        <h3>Nuestros horarios de clases</h3>
-            {{#each notes}}
-                <ul>
-                    <h4 class="horario">{{ title }}</h4>
-                    <li>{{ description }}</li>
-                </ul>
-            {{/each}}
-            <h4 class="whatsapp">¡Pregunta por nuestras Clases Personalizadas!</h4>
-        <button id="close" class="boton negrita">Cerrar</button>
-    </div>
-    <div class="img-modal">
+        <div class="grid-modal">
+            <div class="grid-title">
+                <h3>Nuestros horarios de clases</h3>
+            </div>
+            <div class="grid-content">
+                {{#each notes}}
+                    <ul>
+                        <h4 class="horario">{{ title }}</h4>
+                        <li>{{ description }}</li>
+                    </ul>
+                {{/each}}
+            </div>
+            <div class="grid-pie">
+                <h4 class="whatsapp">¡Pregunta por nuestras Clases Personalizadas!</h4>
+                <button id="close" class="boton negrita">Cerrar</button>
+            </div>
+        </div>
+        <div class="img-modal">
+        </div>
     </div>
 </div>
 <!--Modal-->
